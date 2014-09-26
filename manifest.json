@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Addwalk",
+  "description": "Addwalk extension.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [{
+    "matches": ["http://www.example.com/*"],
+    "js": ["script.js"]
+  }]
+}
