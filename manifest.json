@@ -1,17 +1,17 @@
 {
-  "manifest_version": 2,
-
-  "name": "Addwalk",
-  "description": "Addwalk extension.",
+  "manifest_version": 3,
+  "name": "addwalk-test-widget",
+  "description": "addwalk test-widget extension to test your widget, without embed-code.",
   "version": "1.0",
-
+  "permissions": [
+    "storage"
+  ],
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
-
   "content_scripts": [{
-    "matches": ["http://www.example.com/*"],
+    "matches": ["*://*/*"],
     "js": ["script.js"]
   }]
 }
